@@ -3,6 +3,7 @@ import os
 import math
 import random
 import pdb
+import matplotlib.pyplot as plt
 
 class Pokebicho:
     pass
@@ -123,7 +124,7 @@ for tipo in poketipos.keys():
 print("Type stats done")
 
 def getTypeMod( at1, at2, df1, df2 ):
-    #no idea what to do here
+    #this makes no sense, this mod. depends on the type of the attack
     pt1 = poketype_relations[at1.lower()][poketype_relations["order"][df1.lower()]]
     pt2 = poketype_relations[at2.lower()][poketype_relations["order"][df2.lower()]]
     pt3 = poketype_relations[at1.lower()][poketype_relations["order"][df2.lower()]]
